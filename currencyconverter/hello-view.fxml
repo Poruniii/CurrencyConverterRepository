@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!-- Box Layout -->
+
+<Pane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="430.0" style="-fx-background-color: #141414; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.HelloController">
+   <children>
+      <Button fx:id="button7" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="293.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" prefHeight="85.0" prefWidth="85.0" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="7" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button8" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="293.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" prefHeight="85.0" prefWidth="85.0" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="8" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button9" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="293.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="9" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="400.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="4" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button5" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="400.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="5" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button6" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="400.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="6" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="507.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="507.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="2" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="507.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="3" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button00" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="614.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 35;" stylesheets="@button.css" text="00" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="button0" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="614.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonPeriod" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="614.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonAllClear" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="293.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#allClear" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 30;" stylesheets="@buttonClear.css" text="AC" textAlignment="CENTER" textFill="#ff930f">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonClear" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="400.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#clear" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 35;" stylesheets="@buttonClear.css" text="C" textAlignment="CENTER" textFill="#ff930f">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="21.0" layoutY="75.0" prefHeight="142.0" prefWidth="391.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.4000244140625" minWidth="10.0" prefWidth="160.60001220703126" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.4000244140625" minWidth="10.0" prefWidth="31.666650390624994" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.60003662109375" minWidth="10.0" prefWidth="206.333349609375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="59.13334503173828" minHeight="10.0" prefHeight="59.13334503173828" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.99999847412109" minHeight="10.0" prefHeight="30.933343505859384" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="51.06665649414063" minHeight="10.0" prefHeight="51.06665649414063" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="inputField" prefHeight="38.0" prefWidth="186.0" style="-fx-background-color: white; -fx-background-radius: 8;" stylesheets="@text.css" GridPane.columnIndex="2" />
+            <ComboBox fx:id="fromCurrency" prefWidth="150.0" stylesheets="@dropbox.css" />
+            <ComboBox fx:id="toCurrency" prefWidth="150.0" stylesheets="@dropbox.css" GridPane.rowIndex="2" />
+            <TextField fx:id="outputField" prefHeight="38.0" prefWidth="186.0" style="-fx-background-radius: 8;" stylesheets="@out.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="17.0" prefHeight="17.0" prefWidth="402.0" style="-fx-font-family: helvetica; -fx-font-weight: bold;" text="Currency Converter " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonEqual" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="507.0" minHeight="190.0" minWidth="85.0" mnemonicParsing="false" onAction="#equal" style="-fx-font-size: 40; -fx-font-family: helvetica;" stylesheets="@buttonEqual.css" text="=" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

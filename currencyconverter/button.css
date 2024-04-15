@@ -1,0 +1,18 @@
+/* styles.css */
+
+/* Normal state */
+.button {
+    -fx-background-color: #4a4949; /* Normal background color */
+    -fx-text-fill: white; /* Normal text color */
+}
+
+/* Pressed state */
+.button:pressed {
+    -fx-background-color: #999; /* Background color when pressed */
+    -fx-text-fill:  #141414; /* Text color when pressed */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Change the background color on hover */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}

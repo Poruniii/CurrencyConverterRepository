@@ -1,0 +1,8 @@
+/* styles.css */
+
+/* Style the TextField */
+.text-field{
+	-fx-font-family: "helvetica";
+	-fx-font-size: 36px;
+	-fx-text-fill: #333333;
+}

@@ -1,0 +1,34 @@
+/* dropbox.css */
+
+/* Style the ChoiceBox */
+.combo-box {
+    -fx-background-color: #1c1c1c; /* Background color of the ChoiceBox */
+    -fx-border-color:  #ff930f; /* Border color of the ChoiceBox */
+    -fx-border-width: 1px; /* Border width of the ChoiceBox */
+    -fx-border-radius: 8px;
+    -fx-text-fill: white;
+    -fx-font-family: "helvetica";
+    -fx-font-weight: bold;
+}
+
+/* Style the dropdown menu */
+.combo-box-popup .list-view {
+    -fx-background-color: #333333; /* Background color of the dropdown menu */
+}
+
+/* Style the items in the dropdown menu */
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: white; /* Text color of the dropdown items */
+    -fx-background-color: #333333
+}
+/* Style the selected item in the dropdown menu */
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-text-fill: white;
+}
+.combo-box:hover{
+    -fx-background-color: #333333;
+    -fx-cursor: hand;    
+}
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-text-fill: #ff930f; /* Text color of the dropdown items */
+}
