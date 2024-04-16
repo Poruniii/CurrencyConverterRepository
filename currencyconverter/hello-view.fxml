@@ -12,7 +12,7 @@
 
 <!-- Box Layout -->
 
-<Pane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="430.0" style="-fx-background-color: #141414; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.HelloController">
+<Pane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="430.0" style="-fx-background-color: #141414; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.HelloController">
    <children>
       <Button fx:id="button7" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="293.0" minHeight="85.0" minWidth="85.0" mnemonicParsing="false" onAction="#numberHandler" prefHeight="85.0" prefWidth="85.0" style="-fx-background-radius: 20; -fx-font-family: helvetica; -fx-font-size: 40;" stylesheets="@button.css" text="7" textAlignment="CENTER" textFill="WHITE">
          <font>
@@ -112,5 +112,10 @@
             <Font size="40.0" />
          </font>
       </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="261.0" prefHeight="17.0" prefWidth="391.0" style="-fx-font-family: helvetica;" text="In house Currency Exchange Update. 16/04/2024" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
