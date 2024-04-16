@@ -47,6 +47,7 @@ public class HelloController {
         ObservableList<String> currencies = FXCollections.observableArrayList( "USD", "EUR", "GBP", "JPY","PHP","CAD", "AUD", "CHF", "CNY", "HKD", "NZD","SGD","INR");
         fromCurrency.setItems(currencies);
         toCurrency.setItems(currencies);
+        outputField.setEditable(false);
     }
     @FXML
     private void convertBox(){ //Selecting the currencies in the comboBox
@@ -83,23 +84,23 @@ public class HelloController {
         String enteredFrom = fromCurrency.getValue();
         String enteredTo = toCurrency.getValue();
 
-        if (isTextFieldEmpty(enteredText)){
+        if (isTextFieldEmpty(enteredText)) {
             errorMessages(ErrorCode.ERROR_003);
-        }else{
-            if(isValidComboBox(enteredFrom,enteredTo)){
-                try {
-                    convertBox();
-                }catch (NumberFormatException ex){
-                    errorMessages(ErrorCode.ERROR_001);
-                }
-            }else{
-                errorMessages(ErrorCode.ERROR_004);
+        } else if (!isValidInput(enteredText)) {
+            errorMessages(ErrorCode.ERROR_002);
+        } else if (!isValidComboBox(enteredFrom, enteredTo)) {
+            errorMessages(ErrorCode.ERROR_004);
+        } else {
+            try {
+                convertBox();
+            } catch (NumberFormatException ex) {
+                errorMessages(ErrorCode.ERROR_001);
             }
         }
 //        System.out.println(number + 1); //Debug handler
     }
-    private boolean isValidInput(String currentText){ //Error 001 and Error 002
-        return currentText.matches("-?\\d*\\.?\\d*");
+    private boolean isValidInput(String enteredText){ //Error 001 and Error 002
+        return enteredText.matches("-?\\d*\\.?\\d*");
     }
     private boolean isValidComboBox(String enteredFrom, String enteredTo){ //handles the comboBox if Empty
         return enteredFrom != null && !enteredFrom.isEmpty() && enteredTo != null && !enteredTo.isEmpty();
