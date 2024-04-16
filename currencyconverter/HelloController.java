@@ -83,18 +83,18 @@ public class HelloController {
         String enteredFrom = fromCurrency.getValue();
         String enteredTo = toCurrency.getValue();
 
-        if (isTextFieldEmpty(enteredText)){ //checks for any errors that can happen in the output
+        if (isTextFieldEmpty(enteredText)){
             errorMessages(ErrorCode.ERROR_003);
-        }else if (isValidComboBox(enteredFrom,enteredTo)) {
-            errorMessages(ErrorCode.ERROR_004);
-            }else if (isValidInput(enteredText)){
-            try {
-                convertBox();
-            }catch (NumberFormatException ex){
-                errorMessages(ErrorCode.ERROR_001);
-            }
         }else{
-            errorMessages(ErrorCode.ERROR_002);
+            if(isValidComboBox(enteredFrom,enteredTo)){
+                try {
+                    convertBox();
+                }catch (NumberFormatException ex){
+                    errorMessages(ErrorCode.ERROR_001);
+                }
+            }else{
+                errorMessages(ErrorCode.ERROR_004);
+            }
         }
 //        System.out.println(number + 1); //Debug handler
     }
