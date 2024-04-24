@@ -48,6 +48,13 @@ public class HelloController {
         fromCurrency.setItems(currencies);
         toCurrency.setItems(currencies);
         outputField.setEditable(false);
+
+        //New function added 25/04/2024
+        inputField.textProperty().addListener((observable, oldValue, newValue) -> { //Similar to Error 001 and 002, checks for input that is not 0 to 9 or period
+            if (!newValue.matches("\\d*\\.?\\d*")) {
+                inputField.setText(newValue.replaceAll("[^\\d.]", ""));
+            }
+        });
     }
     @FXML
     private void convertBox(){ //Selecting the currencies in the comboBox
